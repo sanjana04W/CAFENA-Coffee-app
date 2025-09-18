@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header / Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: gold;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: gold;
+} 
+
+
+nav ul li a.active {
+    color: gold;
+}
+
+.icons span {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+/* Menu Section */
+.menu {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gold {
+    color: gold;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.price {
+    font-weight: bold;
+    color: gold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-left: 5px;
+}
+
+.add-to-cart {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.add-to-cart:hover {
+    background: orange;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: black;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+.highlight {
+    color: gold;
+}

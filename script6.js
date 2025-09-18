@@ -1,0 +1,29 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const searchIcon = document.querySelector('.search-icon');
+
+    searchIcon.addEventListener('click', () => {
+        let searchBox = document.createElement('input');
+        searchBox.setAttribute('type', 'text');
+        searchBox.setAttribute('placeholder', 'Search...');
+        searchBox.classList.add('search-box');
+        
+        if (!document.querySelector('.search-box')) {
+            searchIcon.insertAdjacentElement('afterend', searchBox);
+            searchBox.focus();
+            
+            searchBox.addEventListener('blur', () => {
+                searchBox.remove();
+            });
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("Thank you! We will get in touch soon. 😊");
+    });
+});
